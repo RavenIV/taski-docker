@@ -1,3 +1,4 @@
+# backend/api/tests.py
 from http import HTTPStatus
 
 from django.test import Client, TestCase
@@ -5,7 +6,7 @@ from django.test import Client, TestCase
 from api import models
 
 
-class TaskiApiTestCase(TestCase):
+class TaskiAPITestCase(TestCase):
     def setUp(self):
         self.guest_client = Client()
 
